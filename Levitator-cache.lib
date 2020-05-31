@@ -1,50 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x03
-#
-DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 150 50 -150 1 1 10 f
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic_Conn_01x04
-#
-DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 150 50 -250 1 1 10 f
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-X Pin_4 4 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -106,6 +62,25 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Net-Tie_3
+#
+DEF Device_Net-Tie_3 NT 0 0 N N 1 F N
+F0 "NT" 0 50 50 H V C CNN
+F1 "Device_Net-Tie_3" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Net*Tie*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -50 0 50 0 N
+P 3 0 1 20 0 0 0 -100 -50 -100 N
+X 1 1 -100 0 100 R 50 50 1 1 P
+X 2 2 100 0 100 L 50 50 1 1 P
+X 3 3 -100 -100 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -140,29 +115,6 @@ P 2 0 1 0 50 0 -50 0 N
 P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Jumper_Jumper_3_Open
-#
-DEF Jumper_Jumper_3_Open JP 0 0 Y N 1 F N
-F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper_Jumper_3_Open" 0 110 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SolderJumper*Open*
-$ENDFPLIST
-DRAW
-A -65 -30 89 1282 518 0 1 0 N -120 40 -10 40
-A 65 -30 89 1282 518 0 1 0 N 10 40 120 40
-C -130 0 20 0 0 0 N
-C 0 0 20 0 0 0 N
-C 130 0 20 0 0 0 N
-P 2 0 1 0 0 -20 0 -50 N
-X A 1 -250 0 100 R 50 50 1 1 P
-X C 2 0 -150 100 U 50 50 1 1 I
-X B 3 250 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -212,22 +164,18 @@ X D6 9 -500 0 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear_LM7805_TO220
+# Mechanical_MountingHole
 #
-DEF Regulator_Linear_LM7805_TO220 U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear_LM7805_TO220" 0 125 50 H V L CNN
-F2 "Package_TO_SOT_THT:TO-220-3_Vertical" 0 225 50 H I C CIN
-F3 "" 0 -50 50 H I C CNN
-ALIAS LM7806_TO220 LM7808_TO220 LM7809_TO220 LM7810_TO220 LM7812_TO220 LM7815_TO220 LM7818_TO220 LM7824_TO220 LM78M05_TO220 SPX2920U-3.3_TO220 SPX2920U-5.0_TO220 LF15_TO220 LF18_TO220 LF25_TO220 LF33_TO220 LF50_TO220 LF60_TO220 LF80_TO220 LF85_TO220 LF120_TO220 LF47_TO220 LF90_TO220 LM341T-05_TO220 LM341T-12_TO220 LM341T-15_TO220 LM2937xT
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
 $FPLIST
- TO?220*
+ MountingHole*
 $ENDFPLIST
 DRAW
-S -200 75 200 -200 0 1 10 f
-X VI 1 -300 0 100 R 50 50 1 1 W
-X GND 2 0 -300 100 U 50 50 1 1 W
-X VO 3 300 0 100 L 50 50 1 1 w
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
@@ -263,6 +211,30 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# dk_PMIC-Voltage-Regulators-Linear_MC7805CT-BP
+#
+DEF dk_PMIC-Voltage-Regulators-Linear_MC7805CT-BP U 0 20 Y Y 1 F N
+F0 "U" 0 150 60 H V C CNN
+F1 "dk_PMIC-Voltage-Regulators-Linear_MC7805CT-BP" 0 250 60 H V C CNN
+F2 "digikey-footprints:TO-220-3" 200 200 60 H I L CNN
+F3 "https://www.mccsemi.com/pdf/Products/MC7805CT(TO-220).pdf" 200 300 60 H I L CNN
+F4 "MC7805CT-BPMS-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MC7805CT-BP" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
+F8 "https://www.mccsemi.com/pdf/Products/MC7805CT(TO-220).pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/micro-commercial-co/MC7805CT-BP/MC7805CT-BPMS-ND/804682" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC REG LINEAR 5V 1.5A TO220" 200 1000 60 H I L CNN "Description"
+F11 "Micro Commercial Co" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 100 200 -200 0 1 0 f
+X IN 1 -300 0 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 300 0 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
 # dk_Rectangular-Connectors-Headers-Male-Pins_22-23-2021
 #
 DEF dk_Rectangular-Connectors-Headers-Male-Pins_22-23-2021 J 0 40 Y Y 1 F N
@@ -285,6 +257,65 @@ S -10 -45 10 -65 1 1 0 F
 S 90 -45 110 -65 1 1 0 F
 X ~ 1 0 100 100 D 50 50 1 1 P
 X ~ 2 100 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Rectangular-Connectors-Headers-Male-Pins_640456-3
+#
+DEF dk_Rectangular-Connectors-Headers-Male-Pins_640456-3 J 0 40 Y Y 1 F N
+F0 "J" -100 50 50 H V R CNN
+F1 "dk_Rectangular-Connectors-Headers-Male-Pins_640456-3" 100 -150 50 H V C CNN
+F2 "digikey-footprints:PinHeader_1x3_P2.54_Drill1.1mm" 200 200 60 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" 200 300 60 H I L CNN
+F4 "A19470-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "640456-3" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
+F8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/te-connectivity-amp-connectors/640456-3/A19470-ND/259010" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN HEADER VERT 3POS 2.54MM" 200 1000 60 H I L CNN "Description"
+F11 "TE Connectivity AMP Connectors" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -50 0 250 -100 1 1 0 f
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+S 190 -45 210 -65 1 1 0 F
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+X ~ 3 200 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# nrth3rnlb_Bluetooth-Modules_HC-06
+#
+DEF nrth3rnlb_Bluetooth-Modules_HC-06 U 0 40 Y Y 1 F N
+F0 "U" -750 -700 50 H V C CNN
+F1 "nrth3rnlb_Bluetooth-Modules_HC-06" -650 -800 50 H V C CNN
+F2 "nrth3rnlb-footprints:HC-06" -650 -800 50 H I C CNN
+F3 "" -650 -800 50 H I C CNN
+DRAW
+S -200 -100 200 -650 0 1 0 f
+X VCC 1 0 0 100 D 50 50 1 1 W
+X GND 2 0 -750 100 U 50 50 1 1 W
+X TX 3 -300 -450 100 R 50 50 1 1 B
+X RX 4 -300 -300 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# nrth3rnlb_DCDC-Modules_DC-DC_Regulator
+#
+DEF nrth3rnlb_DCDC-Modules_DC-DC_Regulator U 0 40 Y Y 1 F N
+F0 "U" -250 200 50 H V C CNN
+F1 "nrth3rnlb_DCDC-Modules_DC-DC_Regulator" 50 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 -50 250 -350 0 1 0 f
+X IN+ 1 -350 -150 100 R 50 50 1 1 I
+X IN- 2 -350 -250 100 R 50 50 1 1 I
+X OUT+ 3 350 -150 100 L 50 50 1 1 O
+X OUT- 4 350 -250 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
