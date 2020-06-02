@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 340)
+    (start_pass_no 292)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -64,10 +64,7 @@
   )
   (class "kicad_default"
     TX RX "Net-(A1-Pad18)" SENSOR GND "Net-(A1-Pad11)" +5V "COIL_CTRL"
-    VIN "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(A1-Pad17)" "Net-(A1-Pad3)" "Net-(A1-Pad20)" "Net-(A1-Pad5)"
-    "Net-(A1-Pad21)" "Net-(A1-Pad6)" "Net-(A1-Pad22)" "Net-(A1-Pad7)" "Net-(A1-Pad23)" "Net-(A1-Pad8)" "Net-(A1-Pad24)" "Net-(A1-Pad9)"
-    "Net-(A1-Pad25)" "Net-(A1-Pad10)" "Net-(A1-Pad26)" "Net-(A1-Pad27)" "Net-(A1-Pad28)" "Net-(A1-Pad13)" "Net-(A1-Pad14)" "Net-(A1-Pad15)"
-    "Net-(A1-Pad16)" "+5V_1" "+5V_2" "Net-(B1-Pad1)"
+    VIN "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "+5V_1" "+5V_2" "Net-(B1-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
